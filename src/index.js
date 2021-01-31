@@ -1,12 +1,9 @@
+exports.min = function min(array) {}
 
-exports.min = function min (array) {
-  return 0;
-}
+exports.max = function max(array) {};
 
-exports.max = function max (array) {
-  return 0;
-}
+exports.avg = function avg(array) {};
 
-exports.avg = function avg (array) {
-  return 0;
-}
+const isNotEmptyArray = (object) => object.length > 0;
+const isArray = (object) => Array.isArray(object);
+const isProperArray = (object) => isArray(object) && isNotEmptyArray(object);
