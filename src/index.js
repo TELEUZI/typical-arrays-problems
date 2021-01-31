@@ -1,4 +1,7 @@
-exports.min = function min(array) {}
+exports.min = function min(array) {
+    return isProperArray(array) ? array.reduce((minValue, currentValue) =>
+        minValue > currentValue ? currentValue : minValue) : 0;
+};
 
 exports.max = function max(array) {};
 
